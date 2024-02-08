@@ -22,18 +22,18 @@ After data scraping, we transform the data and apply visualizations to draw conc
 
 **Percentaje of items by category**
 
-![alt text](../images/pie_char_category.png)
+![alt text](images/pie_char_category.png)
 
 **Percentaje of items by decade**
 
-![alt text](../images/pie_char_decade.png)
+![alt text](images/pie_char_decade.png)
 
 
 2. Illustrate how the decade affects the price, highlighting significantly higher average prices for music t-shirts from the 1970s.
 
 **Item average price by decade**
 
-![alt text](../images/pie_char_decade.png)
+![alt text](images/pie_char_decade.png)
 
 ### Other Factors Affecting Price
 
@@ -41,19 +41,19 @@ Analyze top 5 artists impacting average price and availability (nº of items in 
 
 **Top 5 heads/taile artists sorted by item average price**
 
-![alt text](../images/bar_char_top&tail_price_artist.png)
+![alt text](images/bar_char_top&tail_price_artist.png)
 
 **Top 5 heads/taile artists sorted by item availability**
 
-![alt text](../images/bar_char_top&tail_avail_artist.png)
+![alt text](images/bar_char_top&tail_avail_artist.png)
 
 Consider how availability may affect pricing by comparing bar plots of pricing and availability by artist. 
 
 **Comparison plots**
 
-![alt text](../images/bar_char_top&tail_price_artist_color.png)
+![alt text](images/bar_char_top&tail_price_artist_color.png)
 
-![alt text](../images/bar_char_top&tail_avail_artist_color.png)
+![alt text](images/bar_char_top&tail_avail_artist_color.png)
 
 While higher prices may align with lower market availability in some cases, no clear correlation is established.
 
@@ -63,13 +63,13 @@ To further analyze and answer new questions, we gather a public dataset based on
 
 **Average rating over decades**
 
-![alt text](../images/bar_char_rating_decade.png)
+![alt text](images/bar_char_rating_decade.png)
 
 Display the best-rated rock albums over decades, revealing no significant difference between decades.
 
 **Top 10 Rock Artists Rated:** 
 
-![alt text](../images/table_artist_rating.png)
+![alt text](images/table_artist_rating.png)
 
 Present a table showing the highest-rated rock artists, noting that they may not necessarily align with the most prominent artists in the vintage t-shirt market.
 
