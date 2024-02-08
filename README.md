@@ -33,7 +33,7 @@ After data scraping, we transform the data and apply visualizations to draw conc
 
 **Item average price by decade**
 
-![alt text](images/pie_char_decade.png)
+![alt text](images/bar_char_decade.png)
 
 ### Other Factors Affecting Price
 
