@@ -1,16 +1,17 @@
 
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-from urllib.request import urlopen
 import csv
 import datetime
+from urllib.request import urlopen
+
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 
 
 
 def acces_collections(collection,page_no=1): 
     
-    "Generates a "soup" of the page 'x' of a filtered search based on collections"
+    "Generates a soup of the page 'x' of a filtered search based on collections"
     
     #1. We defin the url for the search based on collection and page:
     url = f"https://www.wycovintage.com/collections/{collection}?filter.p.product_type=Shirt&options%5Bprefix%5D=last&page={page_no}&sort_by=created-descending"
@@ -19,7 +20,7 @@ def acces_collections(collection,page_no=1):
     html = requests.get(url)
     
     #3. Print the request resoponse, for visibility 
-    print(html)
+    print(f" Page {page_no} // {html} ")
     
     #4. Return an objetct type BeautifulSoup with the content parsed
     return BeautifulSoup(html.content, "html.parser")
@@ -135,9 +136,9 @@ def export_to_csv(data_frame, file_name):
     """
     #print date stamp - datetime.datetime.now()
     
-    t_stamp = str(datetime.datetime.now()).split(".")[0].replace(" ","_")
+    t_stamp = t_stamp = str(datetime.datetime.now()).split(" ")[0]
     
-    file_path = f"data/{file_name}_{t_stamp}.csv"
+    file_path = f"../data/{file_name}_{t_stamp}.csv"
     
     data_frame.to_csv(file_path, index=False)
     print(f"DataFrame successfully exported to {file_path}")

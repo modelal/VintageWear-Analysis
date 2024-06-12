@@ -1,0 +1,19 @@
+
+- `requirements.txt`: This is a list of libraries and versions. 
+
+You can create it typing in your terminal:
+
+```bash
+conda activate env_name
+pip install pipreqs
+pipreqs
+```
+
+Later on, someone will clone your project and will do:
+
+```bash
+conda create -n env_name          # creates an environment
+conda activate env_name           # activates the environment
+pip install -r requirements.txt   # to install recursively the list of dependencies
+
+

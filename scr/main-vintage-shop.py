@@ -1,10 +1,20 @@
 
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-from urllib.request import urlopen
 import csv
 import datetime
+from urllib.request import urlopen
+
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
+from scraping-functions import (
+    acces_collections,
+    all_pages_collection,
+    export_to_csv,
+    last_page,
+    page_table,
+)
+
 
 # 1. Set the collections to srape:
 col = ['1960s','1970s','1980s','1990s','2000s']
